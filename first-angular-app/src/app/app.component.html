@@ -1,1 +1,27 @@
   <app-header></app-header>
+  <div>
+    <main>
+      <ul id = "users">
+        <li>
+          <app-user [id]="users[0].id"  [name]="users[0].name" (selected)="onSelectedClick($event)"/>
+        </li>
+        <li>
+          <app-user [id]="users[1].id" [name]="users[1].name" (selected)="onSelectedClick($event)"/>
+        </li>
+        <li>
+          <app-user  [id]="users[2].id" [name]="users[2].name" (selected)="onSelectedClick($event)"/>
+        </li>
+        <li>
+          <app-user [id]="users[3].id" [name]="users[3].name" (selected)="onSelectedClick($event)"/>
+        </li>
+        <li>
+          <app-user [id]="users[4].id" [name]="users[4].name" (selected)="onSelectedClick($event)"/>
+        </li>
+        <li>
+          <app-user [id]="users[5].id" [name]="users[5].name" (selected)="onSelectedClick($event)"/>
+        </li>
+      </ul>
+    </main>  
+  </div>
+
+  
